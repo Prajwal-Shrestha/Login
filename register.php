@@ -12,7 +12,10 @@ if(isset($_POST['signUp'])){
      $checkEmail="SELECT * From users where email='$email'";
      $result=$conn->query($checkEmail);
      if($result->num_rows>0){
-        echo "Email Address Already Exists !";
+        echo "<script>
+        alert('Email Address Already Exists !');
+        window.location.href = 'index.php';
+        </script>";
      }
      else{
         $insertQuery="INSERT INTO users(firstName,lastName,email,password)
@@ -43,7 +46,10 @@ if(isset($_POST['signIn'])){
     exit();
    }
    else{
-    echo "Invalid Email or Password";
+    echo "<script>
+    alert('Invalid Email or Password');
+    window.location.href = 'index.php';
+    </script>";
    }
 
 }

@@ -76,7 +76,7 @@
       <button id="signUpButton" type="button">Sign Up</button>
     </div>
   </div>
-
+  
   <!-- Custom JavaScript -->
   <script src="script.js"></script>
 </body>

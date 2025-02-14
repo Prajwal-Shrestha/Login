@@ -1,10 +1,9 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-  --primary-color: #5a67d8;       /* Main accent color */
-  --secondary-color: #9f7aea;     /* Lighter accent */
-  --accent-color: #48bb78;        /* For links/buttons */
+  --primary-color: #5a67d8;       
+  --secondary-color: #9f7aea;     
+  --accent-color: #48bb78;       
   --bg-gradient: linear-gradient(135deg, #667eea, #764ba2);
   --container-bg: rgba(255, 255, 255, 0.97);
   --input-border: #ddd;
@@ -27,7 +26,6 @@ body {
   padding: 20px;
 }
 
-/* Container for the forms */
 .container {
   background: var(--container-bg);
   border-radius: 10px;
@@ -38,7 +36,6 @@ body {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -50,7 +47,6 @@ body {
   }
 }
 
-/* Form Title */
 .form-title {
   font-size: 1.8rem;
   text-align: center;
@@ -58,12 +54,10 @@ body {
   color: var(--primary-color);
 }
 
-/* Form element */
 form {
   width: 100%;
 }
 
-/* Input Group */
 .input-group {
   margin-bottom: 1.5rem;
   position: relative;
@@ -77,7 +71,6 @@ form {
   color: #999;
 }
 
-/* Input Field */
 input {
   width: 100%;
   padding: 12px 15px 12px 40px;
@@ -92,7 +85,6 @@ input:focus {
   border-color: var(--input-focus-border);
 }
 
-/* Floating Label */
 label {
   position: absolute;
   left: 40px;
@@ -114,7 +106,6 @@ input:not(:placeholder-shown) ~ label {
   color: var(--primary-color);
 }
 
-/* Submit Button */
 .btn {
   width: 100%;
   background: var(--primary-color);
@@ -133,7 +124,6 @@ input:not(:placeholder-shown) ~ label {
   transform: translateY(-2px);
 }
 
-/* "Or" Divider */
 .or {
   text-align: center;
   margin: 1rem 0;
@@ -142,7 +132,6 @@ input:not(:placeholder-shown) ~ label {
   letter-spacing: 1px;
 }
 
-/* Social Icons */
 .icons {
   display: flex;
   justify-content: center;
@@ -164,7 +153,6 @@ input:not(:placeholder-shown) ~ label {
   transform: scale(1.1);
 }
 
-/* Links for switching forms */
 .links {
   text-align: center;
   font-size: 0.9rem;
@@ -184,7 +172,6 @@ input:not(:placeholder-shown) ~ label {
   color: var(--primary-color);
 }
 
-/* Initially hide the sign-up container (toggle via JS) */
 #signup {
   display: none;
 }

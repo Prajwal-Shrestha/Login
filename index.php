@@ -4,13 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register & Login</title>
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Registration Form (hidden by default) -->
   <div class="container" id="signup" style="display: none;">
     <h1 class="form-title">Register</h1>
     <form method="post" action="register.php">
@@ -47,7 +44,6 @@
     </div>
   </div>
 
-  <!-- Login Form -->
   <div class="container" id="signIn">
     <h1 class="form-title">Sign In</h1>
     <form method="post" action="register.php">
@@ -76,8 +72,7 @@
       <button id="signUpButton" type="button">Sign Up</button>
     </div>
   </div>
-  
-  <!-- Custom JavaScript -->
+
   <script src="script.js"></script>
 </body>
 </html>

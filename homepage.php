@@ -7,7 +7,6 @@ if (!isset($_SESSION['email'])) {
 include("connect.php");
 
 $email = $_SESSION['email'];
-// Fetch user data using a prepared statement
 $sql = "SELECT firstName, lastName FROM users WHERE email = ?";
 $stmt = $conn->prepare($sql);
 if ($stmt) {
@@ -17,7 +16,6 @@ if ($stmt) {
     $stmt->fetch();
     $stmt->close();
 } else {
-    // Fallback to session data if query fails
     $firstName = $_SESSION['firstName'] ?? 'User';
     $lastName  = $_SESSION['lastName'] ?? '';
 }
@@ -28,7 +26,6 @@ if ($stmt) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
-  <!-- Inline CSS for homepage styling -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
